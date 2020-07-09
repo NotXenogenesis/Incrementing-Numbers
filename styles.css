@@ -1,0 +1,12 @@
+* {
+    font-family: 'Cutive Mono', monospace;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.number {
+    display: inline-block;
+    font-size: 50px;
+}
