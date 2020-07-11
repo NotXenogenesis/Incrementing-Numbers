@@ -16,3 +16,5 @@ const number = new Vue({
         }
     }
 });
+
+gameData.number = 1;
