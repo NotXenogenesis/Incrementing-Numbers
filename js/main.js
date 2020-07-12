@@ -8,13 +8,6 @@ const gameData = {
 const number = new Vue({
     el: "#number",
     data: {
-            number: gameData.number
+        mainNumber: gameData
     },
-    computed: {
-        product() {
-            return gameData.number;
-        }
-    }
 });
-
-gameData.number = 1;
