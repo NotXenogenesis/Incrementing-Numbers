@@ -1,7 +1,7 @@
 "use strict";
 
 const gameData = {
-    number: new Decimal("1e-500"),
+    number: new Decimal("1e-1e500"),
     negativeExponent: true
 };
 

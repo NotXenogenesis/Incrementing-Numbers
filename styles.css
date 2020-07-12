@@ -2,11 +2,10 @@
     font-family: 'Cutive Mono', monospace;
 }
 
-.wrapper {
+.number {
     text-align: center;
 }
 
-.number {
-    display: inline-block;
+.mainNumber {
     font-size: 50px;
 }
