@@ -13,17 +13,22 @@ const number = new Vue({
     data: {
         mainNumber: gameData
     },
+    computed: {
+        product() {
+            return `${this.mainNumber.number.mantissa.toFixed(2)}e${this.mainNumber.number.e}`;
+        }
+    }
 });
 
 function buyNumGen() {
     if (gameData.numGenCost.lte(gameData.number)) {
         gameData.numGen += 1;
-        gameData.number.sub(gameData.numGenCost);
+        gameData.number = gameData.number.sub(gameData.numGenCost);
     }
 }
 
 function numberGenFunction() {
-    gameData.number.add(gameData.numGenPower.mul(gameData.numGen));
+    gameData.number = gameData.number.add(gameData.numGenPower.mul(gameData.numGen).div(10));
 }
 
-const mainGameLoop = window.setInterval(numberGenFunction(), 1000);
+const mainGameLoop = window.setInterval(numberGenFunction, 100);
