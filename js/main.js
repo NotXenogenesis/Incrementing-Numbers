@@ -5,7 +5,7 @@ const gameData = {
     negativeExponent: true,
     numGen: 0,
     numGenCost: new Decimal("1e-1000"),
-    numGenPower: new Decimal("1e-1000")
+    numGenPower: new Decimal("1e-1001")
 };
 
 const number = new Vue({
